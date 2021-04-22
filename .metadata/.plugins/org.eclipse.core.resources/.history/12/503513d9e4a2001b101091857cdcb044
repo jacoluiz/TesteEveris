@@ -1,0 +1,23 @@
+package pages;
+
+import elements.HomeElementsMap;
+
+public class HomePage extends HomeElementsMap {
+
+	public void validarPaginaInicial() throws Throwable {
+		
+		
+	}
+
+	public void checarCarrinhoVazio() throws Throwable {
+
+	}
+
+	public void adicionarItemCarrinho() throws Throwable {
+
+	}
+
+	public void navegarAteCarrinho() throws Throwable {
+
+	}
+}

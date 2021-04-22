@@ -1,0 +1,12 @@
+package br.com.ApiRest;
+
+import org.junit.Test;
+import static io.restassured.RestAssured.*;
+
+public class AppTest {
+
+	@Test
+	public void getTest() {
+		when().get("https://httpbin.org/get").then().statusCode(200);
+	}
+}

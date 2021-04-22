@@ -1,0 +1,17 @@
+package br.com.ApiRest;
+
+
+import org.junit.Test;
+
+
+public class AppTest 
+{
+   
+    @Test
+    public void getTest()
+    {
+    	given().
+    	co
+        
+    }
+}

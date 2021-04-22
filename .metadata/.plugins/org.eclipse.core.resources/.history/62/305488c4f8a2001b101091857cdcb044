@@ -1,0 +1,10 @@
+package pages;
+
+import elements.CarrinhoElementsMap;
+
+public class CarrinhoPage extends CarrinhoElementsMap {
+
+	public void validarValoresDoCarrinho() throws Throwable {
+
+	}
+}

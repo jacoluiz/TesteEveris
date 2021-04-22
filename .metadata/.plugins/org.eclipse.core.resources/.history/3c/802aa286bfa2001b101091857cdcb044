@@ -1,0 +1,28 @@
+package pages;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import elements.HomeElementsMap;
+
+public class HomePage extends HomeElementsMap {
+	
+	@Given("^usuario esta na pagina inicial$")
+	public void validarPaginaInicial() throws Throwable {
+		
+	}
+
+	@Given("^sem itens no carrinho$")
+	public void checarCarrinhoVazio() throws Throwable {
+
+	}
+
+	@When("^adicionar um item no carrinho$")
+	public void adicionarItemCarrinho() throws Throwable {
+
+	}
+
+	@When("^navegar ate a pagina do carrinho$")
+	public void navegarAteCarrinho() throws Throwable {
+
+	}
+}

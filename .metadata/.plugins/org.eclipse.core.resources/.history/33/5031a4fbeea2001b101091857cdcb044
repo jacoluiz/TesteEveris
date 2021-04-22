@@ -1,0 +1,13 @@
+package elements;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomeElementsMap {
+
+	@FindBy(xpath = "//*[@id='header']//a/span[5]")
+	protected WebElement contador_itens_carrnho;
+	
+	@FindBy(xpath = "//*[@id='header']//dt[1]/span/a")
+	protected WebElement botao_deletar_primeiro_item_carrinho;
+}

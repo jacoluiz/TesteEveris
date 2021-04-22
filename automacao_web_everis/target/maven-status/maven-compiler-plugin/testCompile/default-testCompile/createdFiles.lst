@@ -1,0 +1,6 @@
+pages\HomePage.class
+elements\HomeElementsMap.class
+gluecode\Glue.class
+pages\CarrinhoPage.class
+runner\RunnerTest.class
+elements\CarrinhoElementsMap.class

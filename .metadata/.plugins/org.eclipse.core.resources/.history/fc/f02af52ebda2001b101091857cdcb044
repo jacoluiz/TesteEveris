@@ -1,0 +1,8 @@
+package elements;
+
+import org.openqa.selenium.WebElement;
+
+public class HomeElementMap {
+
+	protected WebElement teste;
+}

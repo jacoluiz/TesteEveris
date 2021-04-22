@@ -1,0 +1,14 @@
+package functions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import gluecode.TestRule;
+
+public class GeralFunctions {
+	private WebDriver driver = TestRule.getDriver();
+	
+	public void esperarElementoAparecer(WebElement elemento) {
+		
+	}
+}

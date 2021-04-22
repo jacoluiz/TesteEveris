@@ -1,0 +1,26 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import elements.HomeElementsMap;
+import gluecode.TestRule;
+
+public class HomePage extends HomeElementsMap {
+	WebDriver driver = TestRule.getDriver();
+
+	public void validarPaginaInicial() throws Throwable {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void adicionarItemCarrinho() throws Throwable {
+		produto.click();
+		
+		modal_produto_botao_adicionar_carrinho.wait();
+		modal_produto_botao_adicionar_carrinho.click();
+	}
+
+	public void navegarAteCarrinho() throws Throwable {
+		modal_produto_adicionado_botao_ir_carrinho.wait();
+	}
+}

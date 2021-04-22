@@ -1,0 +1,24 @@
+package functions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import gluecode.TestRule;
+
+public class GeralFunctions {
+	private WebDriver driver = TestRule.getDriver();
+	private static int TEMPO_PADRAO_ESPERA = 30;
+	
+	public void esperarElementoAparecer(WebElement elemento) {
+		driver.manage().timeouts().implicitlyWait(TEMPO_PADRAO_ESPERA, TimeUnit.SECONDS);
+		elemento.isEnabled();
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+	}
+	
+	
+	public void selecionarFrame() {
+		driver.switchTo().parentFrame();
+	}
+}

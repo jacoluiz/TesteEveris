@@ -1,0 +1,13 @@
+package br.com.ApiRest;
+
+import org.junit.Test;
+import static io.restassured.RestAssured.*;
+
+public class AppTest {
+	private static String URL = "https://httpbin.org/get";
+
+	@Test
+	public void getTest() {
+		when().get(URL).then().statusCode(200).log().all();
+	}
+}

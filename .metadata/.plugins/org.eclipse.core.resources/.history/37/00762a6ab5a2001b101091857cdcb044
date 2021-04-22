@@ -1,0 +1,15 @@
+package gluecode;
+
+import  org.junit.runner.RunWith ; 
+import  cucumber.api.CucumberOptions ; 
+import  cucumber.api.junit.Cucumber ; 
+
+@RunWith ( Cucumber . Class ) 
+@CucumberOptions ( 
+features =  "src / test / javaFeatures" 
+, glue =  { "seleniumgluecode" } 
+) 
+
+public  class  teste  { 
+
+}

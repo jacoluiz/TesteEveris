@@ -1,0 +1,31 @@
+package pages;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import elements.HomeElementsMap;
+import gluecode.TestRule;
+
+public class HomePage extends HomeElementsMap {
+	WebDriver driver = TestRule.getDriver();
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+
+	public void validarPaginaInicial() throws Throwable {
+		PageFactory.initElements(driver, this);
+	}
+
+	public void checarCarrinhoVazio() throws Throwable {
+		if (!contador_itens_carrnho.getText().equals("(empty)")) {
+//			caso carrinho possua itens 
+		}
+	}
+
+	public void adicionarItemCarrinho() throws Throwable {
+
+	}
+
+	public void navegarAteCarrinho() throws Throwable {
+
+	}
+}

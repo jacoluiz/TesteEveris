@@ -1,0 +1,12 @@
+package pages;
+
+import cucumber.api.java.en.Then;
+import elements.CarrinhoElementsMap;
+
+public class CarrinhoPage extends CarrinhoElementsMap{
+	
+	@Then("^os valores do produto e total em produtos devem coincidir$")
+	public void validarValoresDoCarrinho() throws Throwable {
+
+	}
+}

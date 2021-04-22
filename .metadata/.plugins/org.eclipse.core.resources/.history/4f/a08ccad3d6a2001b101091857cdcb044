@@ -1,0 +1,26 @@
+package gluecode;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.Before;
+
+
+public class TesteRule {
+	private static WebDriver drive;
+	private static String PATH_DRIVER = "src/test/resources/drivers/chromedriver.exe";
+	private static String URL = "http://automationpractice.com/index.php";
+	
+	@Before
+	public void InitialConfig() {
+		System.setProperty("webdrie.chrome.driver", PATH_DRIVER);
+		drive = new ChromeDriver();
+		drive.manage().window().maximize();
+		drive.navigate().to(URL);
+	}
+	
+	public static WebDriver getDriver() {
+		return drive;
+	}
+
+}

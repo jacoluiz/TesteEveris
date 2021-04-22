@@ -1,0 +1,30 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import elements.HomeElementsMap;
+import gluecode.TestRule;
+
+public class HomePage extends HomeElementsMap {
+	WebDriver drive = TestRule.getDriver();
+
+	public void validarPaginaInicial() throws Throwable {
+		PageFactory.initElements(drive, this);
+	}
+
+	public void checarCarrinhoVazio() throws Throwable {
+		System.out.println(contador_itens_carrnho.getText().toString());
+		if (contador_itens_carrnho.getText().equals("")) {
+			
+		}
+	}
+
+	public void adicionarItemCarrinho() throws Throwable {
+
+	}
+
+	public void navegarAteCarrinho() throws Throwable {
+
+	}
+}

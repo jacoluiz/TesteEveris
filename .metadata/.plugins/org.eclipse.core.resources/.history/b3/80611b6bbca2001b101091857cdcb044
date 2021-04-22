@@ -1,0 +1,8 @@
+package gluecode;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.*;
+
+public class teste  {
+	
+}

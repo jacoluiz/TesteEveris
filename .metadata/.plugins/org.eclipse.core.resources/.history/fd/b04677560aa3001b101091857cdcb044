@@ -1,0 +1,20 @@
+package br.com.ApiRest;
+
+import org.junit.Test;
+import static io.restassured.RestAssured.*;
+
+public class AppTest {
+
+	@Test
+	public void getTest() {
+		given()
+        .contentType(ContentType.JSON)
+        .pathParam("id", "AskJsd8Sd")
+    .when()
+        .get("/examplepath/{id}")
+    .then()
+        .statusCode(200)
+        .body("firstName", equalTo("Onur"))
+        .body("Surname", equalTo("Baskirt"));
+	}
+}

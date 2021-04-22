@@ -1,0 +1,37 @@
+package gluecode;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.*;
+
+public class teste {
+
+	@Given("^usuario esta na pagina inicial$")
+	public void usuario_esta_na_pagina_inicial() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@Given("^sem itens no carrinho$")
+	public void sem_itens_no_carrinho() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@When("^adicionar um item no carrinho$")
+	public void adicionar_um_item_no_carrinho() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@When("^navegar ate a pagina do carrinho$")
+	public void navegar_ate_a_pagina_do_carrinho() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@Then("^os valores do produto e total em produtos devem coincidir$")
+	public void os_valores_do_produto_e_total_em_produtos_devem_coincidir() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+}

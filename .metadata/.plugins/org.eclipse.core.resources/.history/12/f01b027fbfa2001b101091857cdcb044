@@ -1,0 +1,31 @@
+package gluecode;
+
+import cucumber.api.java.en.*;
+
+public class Glue {
+
+	@Given("^usuario esta na pagina inicial$")
+	public void validarPaginaInicial() throws Throwable {
+		
+	}
+
+	@Given("^sem itens no carrinho$")
+	public void checarCarrinhoVazio() throws Throwable {
+
+	}
+
+	@When("^adicionar um item no carrinho$")
+	public void adicionarItemCarrinho() throws Throwable {
+
+	}
+
+	@When("^navegar ate a pagina do carrinho$")
+	public void navegarAteCarrinho() throws Throwable {
+
+	}
+
+	@Then("^os valores do produto e total em produtos devem coincidir$")
+	public void validarValoresDoCarrinho() throws Throwable {
+
+	}
+}
